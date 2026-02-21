@@ -1,12 +1,7 @@
-# urls.py
-from django.contrib import admin
 from django.urls import path
 from . import views
 
 urlpatterns = [
-    # Admin site
-    path('admin/', admin.site.urls),
-    
     # Home page
     path('', views.home, name='home'),
     

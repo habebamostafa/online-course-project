@@ -1,15 +1,15 @@
 # admin.py
 from django.contrib import admin
-from django.contrib.auth.models import User, Group
-from django.contrib.auth.admin import UserAdmin, GroupAdmin
+# from django.contrib.auth.models import User, Group
+# from django.contrib.auth.admin import UserAdmin, GroupAdmin
 from django.contrib.sessions.models import Session
 from django.contrib.admin.models import LogEntry
 from django.contrib.contenttypes.models import ContentType
 from .models import Course, Lesson, Question, Choice, Submission
 
 # Register built-in models
-admin.site.register(User, UserAdmin)
-admin.site.register(Group, GroupAdmin)
+# admin.site.register(User, UserAdmin)
+# admin.site.register(Group, GroupAdmin)
 admin.site.register(Session)
 admin.site.register(LogEntry)
 admin.site.register(ContentType)
